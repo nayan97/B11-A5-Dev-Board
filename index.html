@@ -30,49 +30,84 @@
    </section>
    <section class="max-w-[1400px] mx-auto">
     <div class="flex">
-      <div class="w-3/4 bg-base-100">
+      <div class="w-3/4 bg-base-100 rounded-xl overflow-hidden">
+        <div class="top">
+          <div class="grid grid-cols-4 gap-4 p-4">
+          
+            <div class="bg-gray-100 flex">
+              <img class="w-12 p-3" src="assets/checkbox.png" alt="">
+              <h4> Task Assignd <br><span>05</span></h4>
+             </div>
+              <div class="col-span-2 bg-gradient-to-tl from-[#E7FAE4] to-[#53DB3A] flex gap-2">
+                <img src="assets/board.png" alt="">
+                <h4>Discover Something <br> New Today!</h4>
+              </div>
+            <div class="bg-gray-100 flex gap-2">
+              <img class="w-12 p-2" src="/assets/calender.png" alt="">
+              <h4>Wed , <br>
+              Jul 28 2025 </h4>
+            </div>
+          </div>
+        </div>
         <div class="task">
-          <div class="cards grid grid-cols-3 gap-2 mt-12">
-            <div class="card bg-base-100 w-96 shadow-sm">
-              <figure class="px-10 pt-10">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                  class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
+          <div class="cards grid grid-cols-3 gap-4 m-4">
+            <div class="card bg-gray-200 shadow-sm">
+ 
+              <div class="card-body">
+                <button class="justify-items-start btn">Buy Now</button>
                 <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <p class="bg-base-100 p-3 rounded-xl">A card component has a figure, a body part, and inside body there are title and actions parts</p>
                 <div class="card-actions">
-                  <button class="btn btn-primary">Buy Now</button>
+                  <div>
+                  <p class="block">Deadline</p>
+                  <h5 class="block">21 March</h5>
+                  </div>
+                  <button class="btn btn-primary justify-end">Buy Now</button>
                 </div>
               </div>
             </div>
-            <div class="card border  border-solid border-2 border-gray-400 rounded-md p-4 text-center">
-                <img class="w-10 mx-auto" src="assets/send1.png" alt="">
-                <h3>Cashout</h3>
+            <div class="card bg-gray-200 shadow-sm">
+ 
+              <div class="card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="card-actions">
+                  <div>
+                  <p class="block">Deadline</p>
+                  <h5 class="block">21 March</h5>
+                  </div>
+                  <button class="btn btn-primary justify-end">Buy Now</button>
+                </div>
+              </div>
             </div>
-            <div class="card border  border-solid border-2 border-gray-400 rounded-md p-4 text-center">
-                <img class="w-10 mx-auto" src="assets/money1.png" alt="">
-                <h3>Transfer Money</h3>
+            <div class="card bg-gray-200 shadow-sm">
+ 
+              <div class="card-body">
+                <h2 class="card-title">Card Title</h2>
+                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <div class="card-actions">
+                  <div>
+                  <p class="block">Deadline</p>
+                  <h5 class="block">21 March</h5>
+                  </div>
+                  <button class="btn btn-primary justify-end">Buy Now</button>
+                </div>
+              </div>
             </div>
-            <div class="card border  border-solid border-2 border-gray-400 rounded-md p-4 text-center">
-                <img class="w-10 mx-auto" src="assets/bonus1.png" alt="">
-                <h3>Get Bonus</h3>
-            </div>
-            <div class="card border  border-solid border-2 border-gray-400 rounded-md p-4 text-center">
-                <img class="w-10 mx-auto" src="assets/purse1.png" alt="">
-                <h3>Pay Bill</h3>
-            </div>
-            <div class="card border  border-solid border-2 border-gray-400 rounded-md p-4 text-center">
-                <img class="w-10 mx-auto" src="assets/transaction1.png" alt="">
-                <h3>Transactions</h3>
-            </div>
+
             
         </div>
         </div>
       </div>
-      <div class="w-1/4">w-1/4</div>
+      <div class="w-1/4 bg-base-100 ml-4 rounded-xl overflow-hidden p-4">
+        <div class="title flex justify-center">
+          <img src="assets/activity.png" alt="">
+          <h4>Activity Log</h4>
+        </div>
+        <div class="cl-btn flex justify-center mt-5">
+          <button class="btn btn-primary justify-center items-center">Clear History</button>
+        </div>
+      </div>
     </div>
    </section>
     <script src="js/app.js"></script>
