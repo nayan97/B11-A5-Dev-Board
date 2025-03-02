@@ -9,7 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="bg-gray-200 p-2">
+<body class="bg-blue-50 p-2">
+
    <section class="max-w-[1400px] mx-auto rounded-xl my-2 overflow-hidden">
     <header>
         <div class="navbar bg-base-100">
@@ -20,7 +21,7 @@
        
             <div class="navbar-end">
           
-                <span class="flex gap-2 items-center mr-8 bg-gray-200 p-4 rounded-2xl"><img src="/assets/checkbox.png" alt=""><h1 class="font-bold">22</h1></span>
+                <span class="flex gap-2 items-center mr-8 bg-blue-50 p-4 rounded-2xl"><img src="/assets/checkbox.png" alt=""><h1 id="totalTask" class="font-bold">22</h1></span>
              
               <a class="btn rounded-full p-2 w-12"><img src="/assets/theme-btn.png" alt=""></a>
             </div>
@@ -28,17 +29,19 @@
     </header>
 
    </section>
+
    <section class="max-w-[1400px] mx-auto">
     <div class="flex">
       <div class="w-3/4 bg-base-100 rounded-xl overflow-hidden">
+
         <div class="top">
           <div class="grid grid-cols-4 gap-4 p-4">
           
             <div class="bg-gray-100 flex">
               <img class="w-12 p-3" src="assets/checkbox.png" alt="">
-              <h4> Task Assignd <br><span>05</span></h4>
+              <h4> Task Assignd <br><span id="taskAssigned">06</span></h4>
              </div>
-              <div class="col-span-2 bg-gradient-to-tl from-[#E7FAE4] to-[#53DB3A] flex gap-2">
+              <div class="col-span-2 bg-gradient-to-tl from-[#9AA7F8] to-[#3954FD] flex gap-2">
                 <img src="assets/board.png" alt="">
                 <h4>Discover Something <br> New Today!</h4>
               </div>
@@ -49,59 +52,136 @@
             </div>
           </div>
         </div>
+
         <div class="task">
           <div class="cards grid grid-cols-3 gap-4 m-4">
-            <div class="card bg-gray-200 shadow-sm">
+            <div class="card bg-blue-50 shadow-sm">
  
               <div class="card-body">
                 <!-- <h3 class=" flex justify-start bg-base-100">add new</h3> -->
-                <h3 class=" w-max bg-base-100 p-2">add new</h3>
-                <h2 class="card-title">Card Title</h2>
-                <p class="bg-base-100 p-3 rounded-xl">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions flex justify-between items-center w-full">
-                  <div>
-                  <p class="block">Deadline</p>
-                  <h5 class="block">21 March</h5>
+                <h3 class=" w-max bg-base-100 p-2 rounded-lg">ShopEase</h3>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-base-100 p-3 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                 </p>
+                <form action="">
+                  <div class="card-actions flex justify-between items-center w-full">
+                    <div>
+                    <p class="block">Deadline</p>
+                    <h5 class="block">21 March</h5>
+                    </div>
+                    <input class="task-value" value="1" type="hidden">
+                    <button class="task-btn btn btn-primary justify-end">Completed</button>
                   </div>
-                  <button class="btn btn-primary justify-end">Completed</button>
-                </div>
+                </form>
               </div>
             </div>
-            <div class="card bg-gray-200 shadow-sm">
+            <div class="card bg-blue-50 shadow-sm">
  
               <div class="card-body">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions flex justify-between items-center w-full">
-                  <div>
-                  <p class="block">Deadline</p>
-                  <h5 class="block">21 March</h5>
+                <!-- <h3 class=" flex justify-start bg-base-100">add new</h3> -->
+                <h3 class=" w-max bg-base-100 p-2 rounded-lg">ShopEase</h3>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-base-100 p-3 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                 </p>
+                <form action="">
+                  <div class="card-actions flex justify-between items-center w-full">
+                    <div>
+                    <p class="block">Deadline</p>
+                    <h5 class="block">21 March</h5>
+                    </div>
+                    <input class="task-value" value="1" type="hidden">
+                    <button class="task-btn btn btn-primary justify-end">Completed</button>
                   </div>
-                  <button class="btn btn-primary justify-end">Completed</button>
-                </div>
+                </form>
               </div>
             </div>
-            <div class="card bg-gray-200 shadow-sm">
+            <div class="card bg-blue-50 shadow-sm">
  
               <div class="card-body">
-                <h2 class="card-title">Card Title</h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-                <div class="card-actions flex justify-between items-center w-full">
-                  <div>
-                  <p class="block">Deadline</p>
-                  <h5 class="block">21 March</h5>
+                <!-- <h3 class=" flex justify-start bg-base-100">add new</h3> -->
+                <h3 class=" w-max bg-base-100 p-2 rounded-lg">ShopEase</h3>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-base-100 p-3 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                 </p>
+                <form action="">
+                  <div class="card-actions flex justify-between items-center w-full">
+                    <div>
+                    <p class="block">Deadline</p>
+                    <h5 class="block">21 March</h5>
+                    </div>
+                    <input class="task-value" value="1" type="hidden">
+                    <button class="task-btn btn btn-primary justify-end">Completed</button>
                   </div>
-                  <div class="flex justify-end">
+                </form>
+              </div>
+            </div>
+            <div class="card bg-blue-50 shadow-sm">
+ 
+              <div class="card-body">
+                <!-- <h3 class=" flex justify-start bg-base-100">add new</h3> -->
+                <h3 class=" w-max bg-base-100 p-2 rounded-lg">ShopEase</h3>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-base-100 p-3 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                 </p>
+                <form action="">
+                  <div class="card-actions flex justify-between items-center w-full">
+                    <div>
+                    <p class="block">Deadline</p>
+                    <h5 class="block">21 March</h5>
+                    </div>
+                    <input class="task-value" value="1" type="hidden">
+                    <button class="task-btn btn btn-primary justify-end">Completed</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card bg-blue-50 shadow-sm">
+ 
+              <div class="card-body">
+                <!-- <h3 class=" flex justify-start bg-base-100">add new</h3> -->
+                <h3 class=" w-max bg-base-100 p-2 rounded-lg">ShopEase</h3>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-base-100 p-3 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                 </p>
+                <form action="">
+                  <div class="card-actions flex justify-between items-center w-full">
+                    <div>
+                    <p class="block">Deadline</p>
+                    <h5 class="block">21 March</h5>
+                    </div>
+                    <input class="task-value" value="1" type="hidden">
+                    <button class="task-btn btn btn-primary justify-end">Completed</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="card bg-blue-50 shadow-sm">
+ 
+              <div class="card-body">
+                <!-- <h3 class=" flex justify-start bg-base-100">add new</h3> -->
+                <h3 class=" w-max bg-base-100 p-2 rounded-lg">ShopEase</h3>
+                <h2 class="card-title">Fix Mobile Button Issue </h2>
+                <p class="bg-base-100 p-3 rounded-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                 </p>
+                <form action="">
+                  <div class="card-actions flex justify-between items-center w-full">
+                    <div>
+                    <p class="block">Deadline</p>
+                    <h5 class="block">21 March</h5>
+                    </div>
+                    <input class="task-value" value="1" type="hidden">
+                    <button class="task-btn btn btn-primary justify-end">Completed</button>
+                  </div>
+                </form>
+              </div>
+            </div>
 
-                    <button class="btn btn-primary">Completed</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+
 
             
         </div>
         </div>
+
       </div>
       <div class="w-1/4 bg-base-100 ml-4 rounded-xl overflow-hidden p-4">
         <div class="title flex justify-center">
