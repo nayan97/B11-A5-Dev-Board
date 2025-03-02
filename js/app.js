@@ -84,4 +84,11 @@ document.getElementById("blog")
 });
 
 
+document.getElementById("reset-btn")
+.addEventListener("click", function(event){
+    event.preventDefault();
+  document.getElementById('activity-content').innerText = "";
+
+});
+
 
