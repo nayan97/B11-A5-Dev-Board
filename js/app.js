@@ -1,7 +1,25 @@
 
-const today = new Date();
-const formattedDate = today.toLocaleDateString(); 
-document.getElementById("todayDate").innerHTML = formattedDate;
+const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+  
+  const currentDate = new Date().toLocaleString("en-US", options);
+  document.getElementById("todayDate").innerHTML = currentDate;
+
+  const onlyTime = {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    timeZone: "Asia/Dhaka", 
+    hour12: true,
+  };
+  
+  const currentTime = new Date().toLocaleTimeString("en-US", onlyTime);
+ 
+  
 
 // complete task function 
 
@@ -24,13 +42,19 @@ for (const button of buttons ) {
             // code for activity log
             const card = button.closest('.card-body');
             const titleText = card.querySelector('.card-title').innerText;
+            if (taskAssignedConverted > 1) {
+                alert("Your Task Submitted")
+            }else {
+                alert("Your Task Submitted")
+                alert("congrats!");
+            }
 
-            alert("Your Task Submitted")
+     
             
             
             const activityLog =  document.querySelector('.activity-log');
             const logSet = document.createElement('p');
-            logSet.innerText = 'You have Complete The Task ' +  titleText;
+            logSet.innerText = 'You have Complete The Task ' +  titleText + ' at ' + currentTime;
             activityLog.appendChild(logSet);
 
             const updatedTaskAssigned = taskAssignedConverted - taskValueConverted;
